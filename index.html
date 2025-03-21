@@ -6,7 +6,7 @@
   <title>文章概念卡片</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
+
   <script>
     tailwind.config = {
       theme: {
@@ -29,7 +29,7 @@
       }
     }
   </script>
-  
+
   <style>
     .text-clamp-2 {
       display: -webkit-box;
@@ -37,20 +37,20 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
+
     .text-clamp-3 {
       display: -webkit-box;
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    
+
     a {
       text-decoration: none;
       color: #1e88e5;
       transition: all 0.2s;
     }
-    
+
     a:hover {
       text-decoration: underline;
       color: #0d47a1;
@@ -71,7 +71,7 @@
           </div>
         </div>
       </header>
-      
+
       <main class="grid grid-cols-2 gap-4 overflow-hidden flex-grow">
         <!-- 网络问题区域 -->
         <div class="bg-blue-50 rounded-lg p-3 flex flex-col">
@@ -81,7 +81,7 @@
             </div>
             <h2 class="ml-2 text-lg font-semibold text-primary">网络问题</h2>
           </div>
-          
+
           <div class="space-y-2 flex-grow text-sm">
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-exclamation-circle text-warning mr-1.5"></i>网络延迟与丢包</h3>
@@ -90,7 +90,7 @@
                 <p><i class="fas fa-check-circle mr-1"></i>正常标准：延迟<50ms，丢包率<1%</p>
               </div>
             </div>
-            
+
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-tools text-primary mr-1.5"></i>网络测试工具</h3>
               <p class="text-gray-600 mt-1">测试网络工具：<a href="https://fast.com/#" target="_blank">https://fast.com/#</a></p>
@@ -101,7 +101,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- 音视频问题区域 -->
         <div class="bg-green-50 rounded-lg p-3 flex flex-col">
           <div class="flex items-center mb-2">
@@ -110,7 +110,7 @@
             </div>
             <h2 class="ml-2 text-lg font-semibold text-accent">音视频问题</h2>
           </div>
-          
+
           <div class="space-y-2 flex-grow text-sm">
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-microphone-slash text-danger mr-1.5"></i>回声杂音</h3>
@@ -120,7 +120,7 @@
                 <li>避免微波炉、蓝牙设备等干扰源</li>
               </ul>
             </div>
-            
+
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-camera-retro text-warning mr-1.5"></i>摄像头不显示</h3>
               <ul class="text-gray-600 pl-4 mt-1 space-y-0.5 list-disc">
@@ -132,7 +132,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- 课件问题区域 -->
         <div class="bg-purple-50 rounded-lg p-3 flex flex-col">
           <div class="flex items-center mb-2">
@@ -141,7 +141,7 @@
             </div>
             <h2 class="ml-2 text-lg font-semibold text-purple-600">课件问题</h2>
           </div>
-          
+
           <div class="space-y-2 flex-grow text-sm">
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-eye-slash text-warning mr-1.5"></i>看不到课件</h3>
@@ -152,7 +152,7 @@
                 <li>重新安装应用程序</li>
               </ul>
             </div>
-            
+
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-sync-alt text-primary mr-1.5"></i>老师翻页不同步</h3>
               <p class="text-gray-600 mt-1">通常是网络问题，建议:</p>
@@ -163,7 +163,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- 下载资源区域 -->
         <div class="bg-amber-50 rounded-lg p-3 flex flex-col">
           <div class="flex items-center mb-2">
@@ -172,7 +172,7 @@
             </div>
             <h2 class="ml-2 text-lg font-semibold text-amber-600">下载资源</h2>
           </div>
-          
+
           <div class="space-y-2 flex-grow text-sm">
             <div class="bg-white p-2.5 rounded-md shadow-sm">
               <h3 class="font-medium text-dark text-base"><i class="fas fa-globe text-primary mr-1.5"></i>官方网站</h3>
@@ -182,20 +182,28 @@
                 <li>日本官網：<a href="https://www.51talk.jp/" target="_blank">https://www.51talk.jp/</a></li>
               </ul>
             </div>
-            
+
             <div class="bg-white p-2.5 rounded-md shadow-sm">
-              <h3 class="font-medium text-dark text-base"><i class="fas fa-desktop text-accent mr-1.5"></i>AC教室下载</h3>
-              <div class="grid grid-cols-2 gap-1 mt-1">
-                <a href="#" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-windows text-primary mr-1"></i>Windows版</a>
-                <a href="#" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-apple text-gray-800 mr-1"></i>Mac版</a>
-                <a href="#" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-android text-accent mr-1"></i>Android版</a>
-                <a href="#" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-apple text-gray-800 mr-1"></i>iOS版</a>
+              <h3 class="font-medium text-dark text-base"><i class="fas fa-desktop text-accent mr-1.5"></i>软件下载</h3>
+
+              <div class="mt-1">
+                <p class="font-medium text-gray-700"><i class="fas fa-chalkboard-teacher text-primary mr-1"></i>AC教室</p>
+                <div class="grid grid-cols-2 gap-1 mt-0.5 ml-4">
+                  <a href="https://apps.microsoft.com/detail/xp9b3dnwq9kplv?cid=PCCongratsBnr" target="_blank" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-windows text-primary mr-1"></i>Windows版</a>
+                  <a href="https://apps.apple.com/us/app/51airclass/id6469776075?mt=12" target="_blank" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-apple text-gray-800 mr-1"></i>Mac版</a>
+                </div>
+
+                <p class="font-medium text-gray-700 mt-1.5"><i class="fas fa-mobile-alt text-accent mr-1"></i>移动APP</p>
+                <div class="grid grid-cols-2 gap-1 mt-0.5 ml-4">
+                  <a href="https://play.google.com/store/apps/details?id=com.talk51.international" target="_blank" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-android text-accent mr-1"></i>Android版</a>
+                  <a href="https://apps.apple.com/tw/app/51talk-%E7%B7%9A%E4%B8%8A%E8%8B%B1%E6%96%87%E8%AA%B2/id1585144932" target="_blank" class="hover:bg-blue-50 p-1 rounded"><i class="fab fa-apple text-gray-800 mr-1"></i>iOS版</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </main>
-      
+
       <footer class="mt-3 pt-2 border-t border-gray-100 text-xs text-gray-500 flex items-center justify-between">
         <div>
           <p>内部培训文档 - 禁止外传</p>
